@@ -1,0 +1,45 @@
+{
+  "tests": "./tests/cases/*_test.js",
+  "output": "./output/report",
+  "timeout": 10000,
+
+  "helpers": {
+    "Puppeteer": {
+      "url": "",
+      "keepBrowserState": true,
+      "keepCookies": true,
+      "restart": false,
+      "show": true,
+      "disableScreenshots": false,
+      "uniqueScreenshotNames": true,
+      "fullPageScreenshots": true,
+      "getPageTimeout": 20000,
+      "waitForAction": 500,
+      "windowSize": "1920x1080",
+      "chrome": {
+        "args":["--no-sandbox"]
+      }
+    }
+  },
+
+  "plugins": {
+    "autoDelay": {
+      "enabled": true
+    },
+    "allure": {},
+    "stepByStepReport": {
+      "enabled": false
+    },
+    "screenshotOnFail": {
+      "enabled": true
+    }
+},
+
+  "include": {
+    "I": "./steps_file.js"
+  },
+
+  "bootstrap": false,
+  "teardown": false,
+  "name": "CodeceptjsWithPuppeterDemo"
+}

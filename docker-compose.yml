@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  runcodeceptjswithvolumeservice:
+    image: codeception/codeceptjswithfont:1.4.4
+    volumes:
+      - .:/app
+      - /app/node_modules
+    container_name: runcodeceptjswithvolumecontainer_nomocha
+    working_dir: /app
+    command: npm run report
+    #stdin_open: true
+    #tty: true
+    
+    
+    

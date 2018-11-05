@@ -1,0 +1,20 @@
+{
+	"name": "codeceptjs_puppeteer",
+	"version": "0.0.1",
+	"description": "",
+
+	"scripts": {
+		"start": "codeceptjs run",
+		"report": "codeceptjs run --plugins allure"
+	},
+
+	"dependencies": {},
+
+	"devDependencies": {
+		"codeceptjs": "1.4.4",
+		"puppeteer": "1.9.0",
+		"allure-commandline": "latest",
+		"mochawesome": "latest",
+		"mocha": "latest"
+	}
+}
